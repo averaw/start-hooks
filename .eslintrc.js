@@ -15,12 +15,14 @@ module.exports = {
     rules: {
         semi: [2, "always"],
         indent: [0, 4],
+
         "space-before-function-paren": [
             "error",
             { anonymous: "always", named: "never" }
         ],
         "multiline-ternary": ["off"],
         "react/display-name": "off",
+
         quotes: [
             "error",
             "double",
