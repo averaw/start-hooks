@@ -30,7 +30,6 @@ const EditUserPage = () => {
                 profession: getProfessionById(profession)
             })
             .then((data) => history.push(`/users/${data._id}`));
-        console.log(data);
     };
     const transformData = (data) => {
         return data.map((qual) => ({ label: qual.name, value: qual._id }));
@@ -76,7 +75,7 @@ const EditUserPage = () => {
                         <FormComponent
                             onSubmit={handleSubmit}
                             validatorConfig={validatorConfig}
-                            defaultData = {data}
+                            defaultData={data}
                         >
                             <TextField label="Имя" name="name" />
                             <TextField label="Электронная почта" name="email" />
